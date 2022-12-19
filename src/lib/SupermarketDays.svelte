@@ -1,7 +1,7 @@
 <script>
   const table = [{day: "Tuesday Mornings", supermarket: "Countdown Mornington", area: "Mornington/Hill suburbs"},
-{day: "Thursday Mornings", supermarket: "Pak 'n' Save", area: "South Dunedin, Anderson's Bay, St Clair"},
-{day: "Thursday Afternoons", supermarket: "Countdown Andersons Bay", area: "South Dunedin, Anderson's Bay and Waverley"}];
+  {day: "Thursday Mornings", supermarket: "Pak 'n' Save", area: "South Dunedin, Anderson's Bay, St Clair"},
+  {day: "Thursday Afternoons", supermarket: "Countdown Andersons Bay", area: "South Dunedin, Anderson's Bay and Waverley"}];
 </script>
 
 
