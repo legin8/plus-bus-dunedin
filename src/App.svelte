@@ -1,6 +1,6 @@
 <script>
-  import Intro from './lib/Intro.svelte';
-  import WhatWeDo from './lib/WhatWeDo.svelte';
+  import Intro from "./lib/Intro.svelte";
+  import DaysCost from "./lib/Days-Cost.svelte";
 </script>
 
 <main>
@@ -10,7 +10,7 @@
   </div>
 
   <div>
-    <WhatWeDo />
+    <DaysCost />
   </div>
 
 </main>
