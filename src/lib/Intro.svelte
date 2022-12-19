@@ -5,7 +5,7 @@
 <div>
   <div>
     <h1 class="pageTitle">Plus Bus Dunedin</h1>
-    <img src="plusBusVan.jpg" class="vanPic" alt="Van">
+    <img src="./img/plusBusVan.jpg" class="vanPic" alt="Van">
   </div>
   
   <div>
