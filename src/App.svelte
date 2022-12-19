@@ -3,7 +3,7 @@
   import DaysCost from "./lib/Days-Cost.svelte";
 </script>
 
-<main>
+<main class="appMain">
 
   <div>
     <Intro />
@@ -16,5 +16,7 @@
 </main>
 
 <style>
-  
+  .appMain {
+    width: 80vw;
+  }
 </style>
