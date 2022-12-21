@@ -6,8 +6,13 @@
 body {
   margin: 0;
   display: flex;
-  background-color: #eee;
+  background-color: #FFDEAD;
   color: #333;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: normal;
 }
 
 p {
@@ -16,6 +21,11 @@ p {
 
 li {
   list-style: none;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
 }
 
 #app {

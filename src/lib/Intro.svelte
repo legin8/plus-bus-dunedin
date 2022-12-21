@@ -1,31 +1,50 @@
 <script>
-  
+  // This can be changed to change the image that shows at the top of the page
+  const topImage = "./img/plusBusVan.jpg";
 </script>
 
-<div>
+<div class="intro">
   <div>
+    <!-- This is the Heading and picture at the top of the page-->
     <h1 class="pageTitle">Plus Bus Dunedin</h1>
-    <img src="./img/plusBusVan.jpg" class="vanPic" alt="Van">
+    <img src={topImage} alt="Van">
   </div>
   
   <div>
     <h2>What we do</h2>
+    <!-- The above is the subheading and the below is the information content, This is hard coded for now it may change -->
     <div>
-      <p>At Plus Bus we provide a "door-to-door service" to help the elderly and people who struggled using public transport to get groceries home from the supermarket.</p>
-      <p>Clients are picked up from their home in a van, the van can carry up to nine passengers at a time.
-        A volunteer helper will carry groceries back into your house.</p>
+      <ul class="introText">
+        <li>At Plus Bus we provide a <span class="bold">"door-to-door service"</span></li>
+        <li>Helping the <span class="italic">elderly and those that struggle using public transport</span> to get groceries home from the supermarket.</li>
+        <li>Clients are picked up from their home in a van then,</li>
+        <li>the van can carry up to nine passengers at a time.</li>
+        <li>A volunteer helper will carry groceries back into your house.</li>
+      </ul>
     </div>
   </div>
 </div>
 
 
 <style>
-  .vanPic {
-    width: 50vw;
-    height: 50vh;
+  /* This targets the main heading for the page */
+  .intro h1 {
+    font-size: 64px;
+    margin: 20px auto;
   }
 
-  .pageTitle {
-    font-size: 54px;
+  /* This sets the size of the image under the heading */
+  .intro img {
+    width: 50vw;
+    height: 30vw;
   }
+
+  .intro .bold {
+    font-weight: bold;
+  }
+
+  .intro .italic {
+    font-style: italic;
+  }
+  
 </style>
