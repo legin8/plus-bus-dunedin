@@ -2,9 +2,10 @@
   import { onMount } from "svelte";
   let runDay = false;
 
+  // This is for a future feature
   onMount(async function () {
     const date = await new Date();
-    if (date.getDay() == 3) {
+    if (date.getDay() == 3 ) {
       runDay = true;
     }
     

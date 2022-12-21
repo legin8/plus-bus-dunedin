@@ -24,6 +24,10 @@ li {
   line-height: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 #app {
   max-width: 1280px;
   margin: auto;
