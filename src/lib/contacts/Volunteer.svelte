@@ -24,7 +24,9 @@
 					Board Member
 				</li>
 				<li>
-					<img class="logoVS" src="./img/volunteersouth-logo.png" alt="logo">
+					<a href="https://volunteersouth.org.nz/organisation-profile/1082-dunedin-community-transport-trust-plusbus" target="_blank">
+						<img class="logoVS" src="./img/volunteersouth-logo.png" alt="logo">
+					</a>
 				</li>
 			</ul>
 		</div>
