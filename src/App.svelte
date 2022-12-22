@@ -7,26 +7,38 @@
 </script>
 
 <main class="appMain">
-  <div>
-    <DayOfWeek />
-  </div>
+  <div class="appLayoutMain">
+    <div>
+      <DayOfWeek />
+    </div>
 
-  <div>
-    <Intro />
+    <div>
+      <div>
+        <Intro />
+      </div>
+    
+      <div>
+        <DaysCost />
+      </div>
+    
+      <div>
+        <ContactHours />
+      </div>
+    </div>
+  
+    
+  
   </div>
-
-  <div>
-    <DaysCost />
-  </div>
-
-  <div>
-    <ContactHours />
-  </div>
-
+  
 </main>
 
 <style>
   .appMain {
     width: 80vw;
+  }
+
+  .appLayoutMain {
+    display: grid;
+    grid-template-columns: 100px 1fr;
   }
 </style>
