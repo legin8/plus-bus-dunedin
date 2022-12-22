@@ -1,20 +1,5 @@
 <script>
-  import { onMount } from "svelte";
-  let runDay = false;
-
-  // This is for a future feature
-  onMount(async function () {
-    const date = await new Date();
-    if (date.getDay() == 3 ) {
-      runDay = true;
-    }
-    
-    console.log(runDay);
-    console.log(date.getDay());
-
-  });
-
-
+  // Array of objects that fill the list
   const table = [{day: "Tuesday Mornings", supermarket: "Countdown Mornington", area: "Mornington/Hill suburbs"},
   {day: "Thursday Mornings", supermarket: "Pak 'n' Save", area: "South Dunedin, Anderson's Bay, St Clair"},
   {day: "Thursday Afternoons", supermarket: "Countdown Andersons Bay", area: "South Dunedin, Anderson's Bay and Waverley"}];
