@@ -1,18 +1,22 @@
 <script>
   // Components imported here from the lib directory
+  import LeftColumnLayout from "./lib/Fixed Left Column/Left-Column-Layout.svelte";
+
   import Intro from "./lib/Intro.svelte";
   import DaysCost from "./lib/Days-Cost.svelte";
   import ContactHours from "./lib/Contact-Hours.svelte";
-  import DayOfWeek from "./lib/Fixed componets/Day-Of-Week.svelte";
+  
 </script>
 
 <main class="appMain">
   <div class="appLayoutMain">
-    <div>
-      <DayOfWeek />
-    </div>
 
-    <div>
+    <div class="leftColumn">
+      <LeftColumnLayout />
+    </div>
+    
+
+    <div class="RightColumn">
       <div>
         <Intro />
       </div>
@@ -40,5 +44,9 @@
   .appLayoutMain {
     display: grid;
     grid-template-columns: 100px 1fr;
+    gap: 50px;
   }
+
+  
+
 </style>
