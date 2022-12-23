@@ -7,7 +7,7 @@
 <div class="fixedComponents">
 	<DayOfWeek />
 	<div class="callBookButtons">
-		<BookingDisplay />
+		<!--BookingDisplay /-->
 		<CallButton />
 	</div>
 	
@@ -28,5 +28,6 @@
 
 	.callBookButtons {
 		display: flex;
+		justify-content: space-around;
 	}
 </style>

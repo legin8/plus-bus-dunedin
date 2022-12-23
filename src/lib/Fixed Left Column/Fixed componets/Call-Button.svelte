@@ -3,7 +3,9 @@
 </script>
 
 <div>
-	<button class="callButton">Call</button>
+	<a href="tel:6434554050">
+		<button class="callButton">Call<br>03 455 4050</button>
+	</a>
 </div>
 
 <style>
