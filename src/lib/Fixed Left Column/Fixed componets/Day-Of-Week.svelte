@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from "svelte";
+  
 
 	let dayOfWeek = "Error, no Day";
   let isRunning = "";
@@ -33,14 +34,10 @@
   <div>The van {isRunning} running today</div>
 </div>
 
+
+
 <style>
   .thisDay {
-    position: fixed;
-    left: 10px;
-    top: 10px;
     text-align: left;
-    background-color: #f2b48c;
-    border-radius: 20%;
-    padding: 20px;
   }
 </style>
