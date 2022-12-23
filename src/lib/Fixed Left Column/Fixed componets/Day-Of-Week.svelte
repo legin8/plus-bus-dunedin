@@ -38,6 +38,6 @@
 
 <style>
   .thisDay {
-    text-align: left;
+    
   }
 </style>

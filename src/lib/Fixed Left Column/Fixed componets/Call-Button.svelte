@@ -3,12 +3,12 @@
 </script>
 
 <div>
-	<button class="booking">Book</button>
+	<button class="callButton">Call</button>
 </div>
 
 <style>
-.booking {
-  margin: 20px;
+.callButton {
+	margin: 20px;
   padding: 10px 20px;
   border-radius: 100%;
   font-weight: bold;
