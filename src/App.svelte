@@ -43,8 +43,8 @@
 
   .appLayoutMain {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr 4fr;
+    gap: 40px;
   }
 
   

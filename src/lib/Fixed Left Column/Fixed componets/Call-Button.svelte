@@ -4,7 +4,7 @@
 
 <div>
 	<a href="tel:+6434554050">
-		<button class="callButton">Call<br>03 455 4050</button>
+		<button class="callButton">Call</button>
 	</a>
 </div>
 
