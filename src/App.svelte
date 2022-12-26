@@ -5,6 +5,8 @@
   import Intro from "./lib/Intro.svelte";
   import DaysCost from "./lib/Days-Cost.svelte";
   import ContactHours from "./lib/Contact-Hours.svelte";
+
+  export const hours = ["8:30am", "2pm"];
   
 </script>
 
@@ -26,7 +28,7 @@
       </div>
     
       <div>
-        <ContactHours />
+        <ContactHours {hours} />
       </div>
     </div>
   
