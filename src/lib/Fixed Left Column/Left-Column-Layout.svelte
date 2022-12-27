@@ -30,7 +30,8 @@
 <div class="fixedComponents">
 	<DayOfWeek />
 	<div class="ButtonsBorder">
-		<h4 class="buttonHeadings">Inquiry and Booking</h4>
+		<div class="sideContent">
+			<h4 class="buttonHeadings">Inquiry and Booking</h4>
 
 		<div class="callBookButtons">
 
@@ -52,6 +53,9 @@
 		<div class="{emailButtonStatus}">
 			<EmailHoverText />
 		</div>
+			
+		</div>
+		
 	</div>
 </div>
 
@@ -64,6 +68,10 @@
 		background-color: #f2b48c;
 		border-radius: 20%;
 		text-align: left;
+	}
+
+	.sideContent {
+		margin-bottom: 20px;
 	}
 
 	.ButtonsBorder {
