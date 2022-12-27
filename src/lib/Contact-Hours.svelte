@@ -3,11 +3,11 @@
   import Volunteer from "./contacts/Volunteer.svelte";
   import ContactUs from "./contacts/ContactUs.svelte";
 
-  export let hours;
+  export let openHours;
 </script>
 
 <div>
     <Volunteer />
-    <Hours {hours} />
+    <Hours {openHours} />
     <ContactUs />
 </div>

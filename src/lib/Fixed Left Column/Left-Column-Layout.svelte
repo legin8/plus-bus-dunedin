@@ -4,18 +4,53 @@
 	import BookingDisplay from "./Fixed componets/Email-Button.svelte";
 	import CallButton from "./Fixed componets/Call-Button.svelte";
 
+	import CallHover from "./Fixed componets/Call-Hover-Text.svelte"
+	import EmailHover from "./Fixed componets/Email-Hover-Text.svelte";
+    import EmailButton from "./Fixed componets/Email-Button.svelte";
+    import EmailHoverText from "./Fixed componets/Email-Hover-Text.svelte";
+
+	export let openHours;
+
+	let callButtonStatus = "hidText";
+	let emailButtonStatus = "hidText";
+
+	let callText = button => {
+		resetHiddenText();
+		if (button == "call") callButtonStatus = "showText";
+		if (button == "email") emailButtonStatus = "showText";
+	}
+	
+	let resetHiddenText = () => {
+		callButtonStatus = "hidText";
+		emailButtonStatus = "hidText";
+	}
+
 </script>
 
 <div class="fixedComponents">
 	<DayOfWeek />
-	<div>
-		<div class="ButtonsBorder">
-			<h4 class="buttonHeadings">Inquiry and Booking</h4>
+	<div class="ButtonsBorder">
+		<h4 class="buttonHeadings">Inquiry and Booking</h4>
 
-			<div class="callBookButtons">	
-			<BookingDisplay />
-			<CallButton />
+		<div class="callBookButtons">
+
+			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+			<div on:mouseover={() => callText("email")}>
+				<BookingDisplay />
 			</div>
+
+			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+			<div class="callButton" on:mouseover={() => callText("call")}>
+				<CallButton />
+			</div>
+		</div>
+
+		<div class="{callButtonStatus}">
+			<CallHover {openHours} />
+		</div>
+
+		<div class="{emailButtonStatus}">
+			<EmailHoverText />
 		</div>
 	</div>
 </div>
@@ -49,4 +84,13 @@
 		justify-content: space-around;
 		padding-top: 10px;
 	}
+
+	.hidText {
+		display: none;
+	}
+
+	.showText {
+		display: block;
+	}
+
 </style>

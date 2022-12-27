@@ -6,7 +6,7 @@
   import DaysCost from "./lib/Days-Cost.svelte";
   import ContactHours from "./lib/Contact-Hours.svelte";
 
-  export const hours = ["8:30am", "2pm"];
+  const openHours = ["8:30am", "2pm"];
   
 </script>
 
@@ -14,11 +14,11 @@
   <div class="appLayoutMain">
 
     <div class="leftColumn">
-      <LeftColumnLayout />
+      <LeftColumnLayout {openHours}/>
     </div>
     
 
-    <div class="RightColumn">
+    <div class="rightColumn">
       <div>
         <Intro />
       </div>
@@ -28,7 +28,7 @@
       </div>
     
       <div>
-        <ContactHours {hours} />
+        <ContactHours {openHours} />
       </div>
     </div>
   
