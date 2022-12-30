@@ -15,10 +15,6 @@ h2 {
   font-weight: normal;
 }
 
-p {
-  margin: auto;
-}
-
 li {
   list-style: none;
   line-height: 1.5em;
@@ -30,8 +26,8 @@ a {
 
 
 #app {
-  max-width: 1280px;
-  margin: auto;
+  
+  
   text-align: center;
 }
 

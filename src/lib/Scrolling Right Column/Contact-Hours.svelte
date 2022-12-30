@@ -7,7 +7,7 @@
 </script>
 
 <div>
-    <Volunteer />
-    <Hours {openHours} />
-    <ContactUs />
+  <Volunteer />
+  <Hours {openHours} />
+  <ContactUs />
 </div>

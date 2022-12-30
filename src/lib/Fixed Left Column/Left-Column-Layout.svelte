@@ -68,6 +68,7 @@
 		background-color: #f2b48c;
 		border-radius: 20%;
 		text-align: left;
+		width: 250px;
 	}
 
 	.sideContent {
