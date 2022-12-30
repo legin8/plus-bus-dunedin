@@ -1,12 +1,13 @@
 <script>
-	const openTime = "8:30am", closeTime = "2pm";
 	const firstDay = "Tuesday", lastDay = "Thursday";
+
+	export let openHours;
 </script>
 
 <div>
 	<ul>
 		<li>Office hours</li>
 		<li>{firstDay}-{lastDay}</li>
-		<li>{openTime}-{closeTime}</li>
+		<li>{openHours[0]}-{openHours[1]}</li>
 	</ul>
 </div>
