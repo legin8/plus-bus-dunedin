@@ -49,6 +49,16 @@
     gap: 40px;
   }
 
+  @media (max-width: 930px) {
+    .leftColumn {
+      display: none;
+    }
+
+    .appLayoutMain {
+      display: block;
+    }
+  }
+
   
 
 </style>
