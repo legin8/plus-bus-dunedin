@@ -5,6 +5,8 @@
   import Intro from "./lib/Intro.svelte";
   import DaysCost from "./lib/Days-Cost.svelte";
   import ContactHours from "./lib/Contact-Hours.svelte";
+
+  const openHours = ["8:30am", "2pm"];
   
 </script>
 
@@ -12,11 +14,11 @@
   <div class="appLayoutMain">
 
     <div class="leftColumn">
-      <LeftColumnLayout />
+      <LeftColumnLayout {openHours}/>
     </div>
     
 
-    <div class="RightColumn">
+    <div class="rightColumn">
       <div>
         <Intro />
       </div>
@@ -26,7 +28,7 @@
       </div>
     
       <div>
-        <ContactHours />
+        <ContactHours {openHours} />
       </div>
     </div>
   
@@ -43,8 +45,18 @@
 
   .appLayoutMain {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr 4fr;
+    gap: 40px;
+  }
+
+  @media (max-width: 930px) {
+    .leftColumn {
+      display: none;
+    }
+
+    .appLayoutMain {
+      display: block;
+    }
   }
 
   
