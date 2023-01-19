@@ -1,17 +1,17 @@
 <script>
 	// Component imports
 	import DayOfWeek from "./Fixed componets/Day-Of-Week.svelte";
-	import BookingDisplay from "./Fixed componets/Email-Button.svelte";
+	
 	import CallButton from "./Fixed componets/Call-Button.svelte";
-
 	import CallHover from "./Fixed componets/Call-Hover-Text.svelte"
-	import EmailHover from "./Fixed componets/Email-Hover-Text.svelte";
+	
   import EmailButton from "./Fixed componets/Email-Button.svelte";
   import EmailHoverText from "./Fixed componets/Email-Hover-Text.svelte";
 
 	// variables to be passed, not used in this class
 	export let openHours;
 	export let contactNumberLink;
+	export let displayPhoneNumber;
 
 	let callButtonStatus = "hidText";
 	let emailButtonStatus = "hidText";
@@ -39,17 +39,17 @@
 
 			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 			<div on:mouseover={() => callText("email")}>
-				<BookingDisplay />
+				<EmailButton />
 			</div>
 
 			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 			<div class="callButton" on:mouseover={() => callText("call")}>
-				<CallButton {contactNumberLink}/>
+				<CallButton {contactNumberLink} />
 			</div>
 		</div>
 
 		<div class="{callButtonStatus}">
-			<CallHover {openHours} />
+			<CallHover {openHours} {displayPhoneNumber} />
 		</div>
 
 		<div class="{emailButtonStatus}">

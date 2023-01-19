@@ -18,7 +18,7 @@
   <div class="appLayoutMain">
 
     <div class="leftColumn">
-      <LeftColumnLayout {openHours} {contactNumberLink} />
+      <LeftColumnLayout {openHours} {contactNumberLink} {displayPhoneNumber} />
     </div>
     
 
