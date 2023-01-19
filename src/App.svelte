@@ -6,7 +6,9 @@
   import DaysCost from "./lib/Scrolling Right Column/Days-Cost.svelte";
   import ContactHours from "./lib/Scrolling Right Column/Contact-Hours.svelte";
 
-  const openHours = ["8:30am", "2pm"];
+  // These variables are set up so you change them here and only here
+  const openHours = ["8:30am", "2pm"]; // expects an array, with a start and finish only
+  const contactNumberLink = "tel:+6434554050"; // expects a string, never change the tel:+64 part, this is used for a href
   
 </script>
 
@@ -14,7 +16,7 @@
   <div class="appLayoutMain">
 
     <div class="leftColumn">
-      <LeftColumnLayout {openHours}/>
+      <LeftColumnLayout {openHours} {contactNumberLink} />
     </div>
     
 
