@@ -9,6 +9,8 @@
   // These variables are set up so you change them here and only here
   const openHours = ["8:30am", "2pm"]; // expects an array, with a start and finish only
   const contactNumberLink = "tel:+6434554050"; // expects a string, never change the tel:+64 part, this is used for a href
+  const displayPhoneNumber = "03 455 4050";
+
   
 </script>
 
@@ -30,7 +32,7 @@
       </div>
     
       <div>
-        <ContactHours {openHours} />
+        <ContactHours {openHours} {displayPhoneNumber} />
       </div>
     </div>
   
