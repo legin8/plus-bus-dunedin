@@ -1,9 +1,9 @@
 <script>
-	
+	export let contactNumberLink;
 </script>
 
 <div>
-	<a href="tel:+6434554050">
+	<a href={contactNumberLink}>
 		<button class="callButton">Call</button>
 	</a>
 </div>
