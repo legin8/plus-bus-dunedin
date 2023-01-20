@@ -17,3 +17,11 @@ This will let you see what the deployed branch will look like, if all is well.
 npm run deploy
 This can be done from any branch to update the gh-pages and the site will be deployed from their once the checks have been done.
 Warnning the changes arn't instant, you may have to wait a few minutes for the old site to be updated so don't panic thinking you have done something wrong, just wait for github to do its thing.
+
+
+File structure
+scripts
+In the order to put in files
+1. components
+2. variables
+3. functions

@@ -1,13 +1,12 @@
 <script>
-	export let openHours;
-	export let displayPhoneNumber;
+	import info from "../../site_info.json";
 </script>
 
 <div class="callHoverText">
-	<p>{displayPhoneNumber}</p>
+	<p>{info.displayPhoneNumber}</p>
 	<p>Office hours are</p>
 	<p>
-		<strong>{openHours[0]}</strong> - <strong>{openHours[1]}</strong>
+		<strong>{info.openHours[0]}</strong> - <strong>{info.openHours[1]}</strong>
 	</p>
 </div>
 

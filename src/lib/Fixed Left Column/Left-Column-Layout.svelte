@@ -8,10 +8,6 @@
   import EmailButton from "./Fixed componets/Email-Button.svelte";
   import EmailHoverText from "./Fixed componets/Email-Hover-Text.svelte";
 
-	// variables to be passed, not used in this class
-	export let openHours;
-	export let contactNumberLink;
-	export let displayPhoneNumber;
 
 	let callButtonStatus = "hidText";
 	let emailButtonStatus = "hidText";
@@ -44,12 +40,12 @@
 
 			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 			<div class="callButton" on:mouseover={() => callText("call")}>
-				<CallButton {contactNumberLink} />
+				<CallButton />
 			</div>
 		</div>
 
 		<div class="{callButtonStatus}">
-			<CallHover {openHours} {displayPhoneNumber} />
+			<CallHover />
 		</div>
 
 		<div class="{emailButtonStatus}">

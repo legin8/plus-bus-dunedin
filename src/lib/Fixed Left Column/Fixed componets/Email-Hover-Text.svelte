@@ -1,12 +1,12 @@
 <script>
-	
+	import info from "../../site_info.json";
 	
 </script>
 
 <div class="callHoverText">
 	<p>Email us on</p>
 	<p>
-		<strong>plusbusshops@gmail.com </strong>
+		<strong>{info.email}</strong>
 	</p>
 </div>
 

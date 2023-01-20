@@ -1,9 +1,9 @@
 <script>
-	export let contactNumberLink;
+	import info from "../../site_info.json";
 </script>
 
 <div>
-	<a href={contactNumberLink}>
+	<a href={info.contactNumberLink}>
 		<button class="callButton">Call</button>
 	</a>
 </div>

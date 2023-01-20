@@ -1,14 +1,12 @@
 <script>
-
+  import info from "../../site_info.json";
 </script>
 
 <div>
 	
-  <a href="mailto:plusbusshops@gmail.com?subject=Plus Bus Inquirers">
+  <a href={info.emailLink}>
     <button class="emailButton">
-      <em>
-        Email
-      </em>
+      <em>Email</em>
     </button>
   </a>
 </div>

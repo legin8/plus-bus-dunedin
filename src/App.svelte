@@ -6,7 +6,7 @@
 
   // These variables are set up so you change them here and only here
   const openHours = ["8:30am", "2pm"]; // expects an array, with a start and finish only
-  const contactNumberLink = "tel:+6434554050"; // expects a string, never change the tel:+64 part
+  
   const displayPhoneNumber = "03 455 4050";
 </script>
 
@@ -15,7 +15,7 @@ the left column is currently removed -->
 <main>
   <div class="appLayoutMain">
     <div class="leftColumn">
-      <LeftColumnLayout {openHours} {contactNumberLink} {displayPhoneNumber} />
+      <LeftColumnLayout {openHours} {displayPhoneNumber} />
     </div>
     
 
