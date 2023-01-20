@@ -4,7 +4,7 @@
 
 <div>
 	
-  <a href={info.emailLink}>
+  <a href={info.plusBusDetails.emailLink}>
     <button class="emailButton">
       <em>Email</em>
     </button>

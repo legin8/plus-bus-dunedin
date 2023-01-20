@@ -31,26 +31,26 @@
 		<div class="sideContent">
 			<h4 class="buttonHeadings">Inquiry and Booking</h4>
 
-		<div class="callBookButtons">
+			<div class="callBookButtons">
 
-			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
-			<div on:mouseover={() => callText("email")}>
-				<EmailButton />
+				<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+				<div on:mouseover={() => callText("email")}>
+					<EmailButton />
+				</div>
+
+				<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+				<div class="callButton" on:mouseover={() => callText("call")}>
+					<CallButton />
+				</div>
 			</div>
 
-			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
-			<div class="callButton" on:mouseover={() => callText("call")}>
-				<CallButton />
+			<div class="{callButtonStatus}">
+				<CallHover />
 			</div>
-		</div>
 
-		<div class="{callButtonStatus}">
-			<CallHover />
-		</div>
-
-		<div class="{emailButtonStatus}">
-			<EmailHoverText />
-		</div>
+			<div class="{emailButtonStatus}">
+				<EmailHoverText />
+			</div>
 			
 		</div>
 		

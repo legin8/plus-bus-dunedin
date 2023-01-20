@@ -1,13 +1,12 @@
 <script>
-  // This can be changed to change the image that shows at the top of the page
-  const topImage = "./img/plusBusVan.jpg";
+  import info from "../../site_info.json";
 </script>
 
 <div class="intro">
   <div>
     <!-- This is the Heading and picture at the top of the page-->
     <h1 class="pageTitle">Plus Bus Dunedin</h1>
-    <img src={topImage} alt="Van">
+    <img src={info.assetAdresses.mainPicture} alt="Van">
   </div>
   
   <div>

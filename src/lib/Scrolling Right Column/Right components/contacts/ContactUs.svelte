@@ -5,14 +5,14 @@
 <div>
 	<h2>Contact us</h2>
 	<div>
-		<p>{info.displayPhoneNumber} (Co-ordinator)</p>
-		<a href={info.emailLink}>
-			<em>{info.email}</em>
+		<p>{info.plusBusDetails.displayPhoneNumber} (Co-ordinator)</p>
+		<a href={info.plusBusDetails.emailLink}>
+			<em>{info.plusBusDetails.email}</em>
 		</a>
 	</div>
 	<div>
 		<ul>
-			{#each info.address as address}
+			{#each info.plusBusDetails.address as address}
 				<li>{address}</li>
 			{/each}
 		</ul>

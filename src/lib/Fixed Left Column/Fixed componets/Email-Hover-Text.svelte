@@ -6,7 +6,7 @@
 <div class="callHoverText">
 	<p>Email us on</p>
 	<p>
-		<strong>{info.email}</strong>
+		<strong>{info.plusBusDetails.email}</strong>
 	</p>
 </div>
 

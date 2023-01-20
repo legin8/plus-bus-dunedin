@@ -5,7 +5,7 @@
 <div>
 	<ul>
 		<li>Office hours</li>
-		<li>{info.officeHourDaysMessage}</li>
-		<li>{info.officeHourTimesMessage}</li>
+		<li>{info.messages.officeHourDaysMessage}</li>
+		<li>{info.messages.officeHourTimesMessage}</li>
 	</ul>
 </div>

@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<a href={info.contactNumberLink}>
+	<a href={info.plusBusDetails.phoneNumberLink}>
 		<button class="callButton">Call</button>
 	</a>
 </div>

@@ -3,11 +3,11 @@
 </script>
 
 <div class="callHoverText">
-	<p>{info.displayPhoneNumber}</p>
+	<p>{info.plusBusDetails.displayPhoneNumber}</p>
 	<p>Office hours are</p>
-	<p>{info.officeHourDaysMessage}</p>
+	<p>{info.messages.officeHourDaysMessage}</p>
 	<p>
-		<strong>{info.officeHourTimesMessage}</strong>
+		<strong>{info.messages.officeHourTimesMessage}</strong>
 	</p>
 </div>
 
