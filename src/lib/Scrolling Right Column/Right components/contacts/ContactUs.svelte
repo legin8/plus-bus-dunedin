@@ -1,26 +1,20 @@
 <script>
-	// This array contains the address in the order of street, suburb, city, post code.
-	const address = ["2 Playfair Street", "Caversham", "Dunedin", "9012"];
-
-	export let displayPhoneNumber;
+	import info from "../../../site_info.json";
 </script>
 
 <div>
 	<h2>Contact us</h2>
 	<div>
-		<p>{displayPhoneNumber} (Co-ordinator)</p>
-		<a href="mailto:plusbusshops@gmail.com?subject=Plus Bus Inquirers">
-			<em>
-				plusbusshops@gmail.com
-			</em>
+		<p>{info.displayPhoneNumber} (Co-ordinator)</p>
+		<a href={info.emailLink}>
+			<em>{info.email}</em>
 		</a>
 	</div>
 	<div>
 		<ul>
-			<li>{address[0]},</li>
-			<li>{address[1]},</li>
-			<li>{address[2]},</li>
-			<li>{address[3]}.</li>
+			{#each info.address as address}
+				<li>{address}</li>
+			{/each}
 		</ul>
 	</div>
 </div>

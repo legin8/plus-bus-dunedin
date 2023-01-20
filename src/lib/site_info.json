@@ -3,5 +3,13 @@
 	"contactNumberLink" : "tel:+6434554050",
 	"displayPhoneNumber" : "03 455 4050",
 	"emailLink" : "mailto:plusbusshops@gmail.com?subject=Plus Bus Inquirers",
-	"email" : "plusbusshops@gmail.com"
+	"email" : "plusbusshops@gmail.com",
+	"volunteerSouthLink" : "https://volunteersouth.org.nz/organisation-profile/1082-dunedin-community-transport-trust-plusbus",
+	"officeHourDaysMessage" : "Tuesday - Thursday",
+	"officeHourTimesMessage" : "8:30am - 2pm",
+	"officeDays" : ["Tuesday", "Thursday"],
+	"address" : ["2 Playfair Street", "Caversham", "Dunedin", "9012"],
+	"vanDriverPdf" : "./pdf/Dunedin Community Transport Trust Inc.pdf",
+	"shoppingAssistant" : "./pdf/Vol Shopping Asst RD 22.pdf",
+	"volunteerSouthLogo" : "./img/volunteersouth-logo.png"
 }

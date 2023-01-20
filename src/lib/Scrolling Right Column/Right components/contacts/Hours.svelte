@@ -1,13 +1,11 @@
 <script>
-	const firstDay = "Tuesday", lastDay = "Thursday";
-
-	export let openHours;
+	import info from "../../../site_info.json";
 </script>
 
 <div>
 	<ul>
 		<li>Office hours</li>
-		<li>{firstDay}-{lastDay}</li>
-		<li>{openHours[0]}-{openHours[1]}</li>
+		<li>{info.officeHourDaysMessage}</li>
+		<li>{info.officeHourTimesMessage}</li>
 	</ul>
 </div>

@@ -5,8 +5,9 @@
 <div class="callHoverText">
 	<p>{info.displayPhoneNumber}</p>
 	<p>Office hours are</p>
+	<p>{info.officeHourDaysMessage}</p>
 	<p>
-		<strong>{info.openHours[0]}</strong> - <strong>{info.openHours[1]}</strong>
+		<strong>{info.officeHourTimesMessage}</strong>
 	</p>
 </div>
 
