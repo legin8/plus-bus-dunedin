@@ -4,10 +4,11 @@
   import ContactUs from "./contacts/ContactUs.svelte";
 
   export let openHours;
+  export let displayPhoneNumber;
 </script>
 
 <div>
-    <Volunteer />
-    <Hours {openHours} />
-    <ContactUs />
+  <Volunteer />
+  <Hours {openHours} />
+  <ContactUs {displayPhoneNumber} />
 </div>

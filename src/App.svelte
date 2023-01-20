@@ -1,54 +1,45 @@
 <script>
-  // Components imported here from the lib directory
+  // This is divided into to columns, left and right.
   import LeftColumnLayout from "./lib/Fixed Left Column/Left-Column-Layout.svelte";
+  import RightColumnLayout from "./lib/Scrolling Right Column/RightColumnLayout.svelte";
 
-  import Intro from "./lib/Intro.svelte";
-  import DaysCost from "./lib/Days-Cost.svelte";
-  import ContactHours from "./lib/Contact-Hours.svelte";
 
-  const openHours = ["8:30am", "2pm"];
-  
+  // These variables are set up so you change them here and only here
+  const openHours = ["8:30am", "2pm"]; // expects an array, with a start and finish only
+  const contactNumberLink = "tel:+6434554050"; // expects a string, never change the tel:+64 part
+  const displayPhoneNumber = "03 455 4050";
 </script>
 
-<main class="appMain">
+<!-- This is containing the layout of the left and right columns, when the screen is less than 930px
+the left column is currently removed -->
+<main>
   <div class="appLayoutMain">
-
     <div class="leftColumn">
-      <LeftColumnLayout {openHours}/>
+      <LeftColumnLayout {openHours} {contactNumberLink} {displayPhoneNumber} />
     </div>
     
 
     <div class="rightColumn">
-      <div>
-        <Intro />
-      </div>
-    
-      <div>
-        <DaysCost />
-      </div>
-    
-      <div>
-        <ContactHours {openHours} />
-      </div>
+      <RightColumnLayout {openHours} {displayPhoneNumber} />
     </div>
-  
-    
-  
   </div>
   
 </main>
 
 <style>
-  .appMain {
-    width: 80vw;
-  }
 
   .appLayoutMain {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 40px;
+    grid-template-columns: 280px 1fr;
   }
 
+  .rightColumn {
+    width: 70%;
+    margin: auto;
+  }
+
+
+  /* break points */
   @media (max-width: 930px) {
     .leftColumn {
       display: none;

@@ -15,8 +15,9 @@ h2 {
   font-weight: normal;
 }
 
-p {
-  margin: auto;
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
@@ -30,8 +31,8 @@ a {
 
 
 #app {
-  max-width: 1280px;
-  margin: auto;
+  
+  
   text-align: center;
 }
 
