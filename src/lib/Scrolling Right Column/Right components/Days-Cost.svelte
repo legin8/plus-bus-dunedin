@@ -8,7 +8,7 @@
   <div class="dayCostInfo">
     <h2>Days and Costs</h2>
     <ul>
-      <li>We operate on <strong>{info.plusBusDetails.officeDays[0]}</strong> and <strong>{info.plusBusDetails.officeDays[0]}</strong>,</li>
+      <li>We operate on <strong>{info.plusBusDetails.officeDays[0]}</strong> and <strong>{info.plusBusDetails.officeDays[1]}</strong>,</li>
       <li>The cost depends on where you live in <i>Dunedin.</i></li>
       <li>${info.plusBusDetails.feeRange[0]} - ${info.plusBusDetails.feeRange[1]}, return trip.</li>
       <li>This is based on the distance from your <i>home</i> to the <i>supermarket.</i></li>
